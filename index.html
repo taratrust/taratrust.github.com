@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Tara 567 - India's #1 Matka Gaming Platform</title>
+    <meta name="description" content="Welcome to Tara 567 - India's most trusted Matka gaming platform. Fast payouts, live market results, 24/7 instant support. Download Tara 567 App today!">
+    
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <style>
+        :root {
+            /* Theme: Deep Navy Blue + Crisp White + Electric Blue Accents */
+            --navy-midnight: #030816;
+            --navy-deep: #071126;
+            --navy-card: #0d1b3e;
+            --navy-light: #182a54;
+            --navy-border: #21386e;
+            
+            --blue-royal: #1d4ed8;
+            --blue-electric: #2563eb;
+            --blue-bright: #3b82f6;
+            --blue-light: #60a5fa;
+            --cyan-glow: #06b6d4;
+            --cyan-accent: #38bdf8;
+
+            --bg-body: #f4f8fc;
+            --bg-white: #ffffff;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --text-light: #94a3b8;
+            
+            --gradient-hero: linear-gradient(135deg, #030816 0%, #081636 50%, #0d2354 100%);
+            --gradient-accent: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
+            --gradient-glow: linear-gradient(135deg, #1d4ed8 0%, #06b6d4 100%);
+            --gradient-gold: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
+
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+            
+            --shadow-sm: 0 4px 12px rgba(3, 8, 22, 0.05);
+            --shadow-md: 0 10px 30px rgba(3, 8, 22, 0.08);
+            --shadow-lg: 0 20px 45px rgba(3, 8, 22, 0.12);
+            --shadow-glow: 0 8px 25px rgba(37, 99, 235, 0.35);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+
+        /* ===== TOP TICKER BANNER ===== */
+        .ticker-bar {
+            background: linear-gradient(90deg, #030816, #1d4ed8, #030816);
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 7px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1001;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .ticker-content {
+            display: inline-block;
+            animation: ticker 25s linear infinite;
+            padding-left: 100%;
+        }
+
+        .ticker-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-right: 35px;
+        }
+
+        .ticker-item i {
+            color: var(--cyan-accent);
+        }
+
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+
+        /* ===== GLASS NAVBAR ===== */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(3, 8, 22, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            flex-shrink: 0;
+        }
+
+        .logo-wrap {
+            position: relative;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            padding: 2px;
+            background: var(--gradient-accent);
+            box-shadow: 0 0 12px rgba(38, 189, 248, 0.4);
+            flex-shrink: 0;
+        }
+
+        .logo-wrap img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #ffffff;
+            display: block;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        .brand-title span {
+            color: var(--cyan-accent);
+        }
+
+        .brand-subtitle {
+            font-size: 9px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.65);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: rgba(255, 255, 255, 0.85);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--cyan-accent);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .btn-glow {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 9px 18px;
+            border-radius: var(--radius-full);
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #ffffff;
+            background: var(--gradient-accent);
+            box-shadow: var(--shadow-glow);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            white-space: nowrap;
+        }
+
+        .btn-glow:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(37, 99, 235, 0.5);
+        }
+
+        .btn-wa {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 9px 16px;
+            border-radius: var(--radius-full);
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #ffffff;
+            background: #25D366;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            white-space: nowrap;
+        }
+
+        .btn-wa:hover {
+            transform: translateY(-2px);
+            background: #20ba5a;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            position: relative;
+            background: var(--gradient-hero);
+            color: #ffffff;
+            padding: 60px 16px 80px;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, rgba(6, 182, 212, 0.08) 50%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: pulseGlow 6s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulseGlow {
+            0% { transform: translateX(-50%) scale(0.9); opacity: 0.7; }
+            100% { transform: translateX(-50%) scale(1.1); opacity: 1; }
+        }
+
+        .hero-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .hero-badge-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(13, 27, 62, 0.85);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 6px 16px;
+            border-radius: var(--radius-full);
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--cyan-accent);
+            margin-bottom: 22px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-badge-pill .pulse-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #22c55e;
+            box-shadow: 0 0 8px #22c55e;
+            flex-shrink: 0;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.2); }
+        }
+
+        .hero-logo-showcase {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 16px auto;
+            text-align: center;
+            width: 100%;
+        }
+
+        .logo-ring-outer {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            padding: 5px;
+            background: var(--gradient-accent);
+            box-shadow: 0 0 35px rgba(37, 99, 235, 0.5), 0 0 15px rgba(56, 189, 248, 0.3);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .logo-img-inner {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #ffffff;
+            border: 3px solid #030816;
+        }
+
+        .hero-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(32px, 7vw, 58px);
+            font-weight: 900;
+            line-height: 1.1;
+            letter-spacing: -0.5px;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, #ffffff 0%, #38bdf8 60%, #2563eb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(14px, 3.5vw, 18px);
+            color: rgba(255, 255, 255, 0.85);
+            max-width: 680px;
+            margin: 0 auto 30px;
+            font-weight: 500;
+            line-height: 1.5;
+            padding: 0 10px;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .btn-hero-main {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: var(--radius-full);
+            font-size: 15px;
+            font-weight: 800;
+            text-decoration: none;
+            color: #ffffff;
+            background: var(--gradient-accent);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            min-height: 48px;
+        }
+
+        .btn-hero-main:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 35px rgba(37, 99, 235, 0.55);
+        }
+
+        .btn-hero-wa {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 26px;
+            border-radius: var(--radius-full);
+            font-size: 15px;
+            font-weight: 800;
+            text-decoration: none;
+            color: #ffffff;
+            background: #25D366;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            min-height: 48px;
+        }
+
+        .btn-hero-wa:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 35px rgba(37, 211, 102, 0.45);
+        }
+
+        /* ===== HERO STATS STRIP ===== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .stat-card {
+            background: rgba(13, 27, 62, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: var(--radius-md);
+            padding: 14px 8px;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(20px, 4vw, 26px);
+            font-weight: 900;
+            color: var(--cyan-accent);
+            display: block;
+            margin-bottom: 2px;
+            line-height: 1.1;
+        }
+
+        .stat-label {
+            font-size: clamp(9px, 2.2vw, 11px);
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.75);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* ===== QUICK ACCESS FLOATING BAR ===== */
+        .quick-actions-bar {
+            margin-top: -30px;
+            position: relative;
+            z-index: 10;
+            padding: 0 16px;
+        }
+
+        .quick-actions-inner {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 18px 20px;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            align-items: center;
+        }
+
+        .quick-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .quick-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-md);
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--blue-electric);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .quick-info h4 {
+            font-size: 13px;
+            font-weight: 800;
+            color: var(--navy-deep);
+            line-height: 1.2;
+        }
+
+        .quick-info p {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* ===== COMMON SECTION STYLES ===== */
+        .section {
+            padding: 60px 16px;
+        }
+
+        .section-alt {
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            padding: 0 10px;
+        }
+
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--blue-electric);
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: var(--radius-full);
+            margin-bottom: 12px;
+            border: 1px solid rgba(37, 99, 235, 0.15);
+        }
+
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(22px, 5vw, 34px);
+            font-weight: 800;
+            color: var(--navy-deep);
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+
+        .section-desc {
+            font-size: clamp(13px, 3vw, 15px);
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .title-divider {
+            width: 50px;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: 4px;
+            margin: 14px auto 0;
+        }
+
+        /* ===== MARKET CATEGORIES CARDS ===== */
+        .markets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .market-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 24px 20px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(37, 99, 235, 0.08);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .market-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-accent);
+        }
+
+        .market-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .market-icon-box {
+            width: 54px;
+            height: 54px;
+            border-radius: var(--radius-md);
+            background: var(--gradient-hero);
+            color: var(--cyan-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            margin-bottom: 16px;
+            box-shadow: 0 6px 15px rgba(7, 17, 38, 0.15);
+        }
+
+        .market-card h3 {
+            font-size: 19px;
+            font-weight: 800;
+            color: var(--navy-deep);
+            margin-bottom: 8px;
+        }
+
+        .market-card p {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: auto;
+        }
+
+        .tag-pill {
+            background: rgba(37, 99, 235, 0.06);
+            color: var(--blue-electric);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: var(--radius-full);
+            border: 1px solid rgba(37, 99, 235, 0.12);
+        }
+
+        /* ===== GAME RATES SECTION ===== */
+        .rates-container {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(37, 99, 235, 0.1);
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .rates-table-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            background: var(--gradient-hero);
+            color: #ffffff;
+            padding: 14px 16px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .rates-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            padding: 12px 16px;
+            align-items: center;
+            border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+        }
+
+        .rates-row:last-child {
+            border-bottom: none;
+        }
+
+        .rate-game-name {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 700;
+            color: var(--navy-deep);
+            font-size: 13px;
+        }
+
+        .rate-game-name i {
+            width: 26px;
+            height: 26px;
+            border-radius: 6px;
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--blue-electric);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+        }
+
+        .rate-bet {
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .rate-win {
+            font-weight: 900;
+            color: #16a34a;
+            font-size: 14px;
+        }
+
+        .rates-row.jackpot {
+            background: linear-gradient(90deg, rgba(37, 99, 235, 0.06), rgba(56, 189, 248, 0.06));
+        }
+
+        .rates-row.jackpot .rate-win {
+            color: var(--blue-electric);
+            font-size: 15px;
+        }
+
+        /* ===== WHY CHOOSE US (FEATURES) ===== */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .feature-box {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            padding: 24px 18px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(15, 23, 42, 0.06);
+            text-align: center;
+        }
+
+        .feature-icon-wrap {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--blue-electric);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin: 0 auto 16px;
+        }
+
+        .feature-box h4 {
+            font-size: 16px;
+            font-weight: 800;
+            color: var(--navy-deep);
+            margin-bottom: 6px;
+        }
+
+        .feature-box p {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* ===== HOW TO PLAY STEPS ===== */
+        .steps-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .step-card {
+            background: var(--bg-white);
+            border-radius: var(--radius-lg);
+            padding: 32px 20px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(37, 99, 235, 0.08);
+            position: relative;
+        }
+
+        .step-badge {
+            position: absolute;
+            top: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--gradient-accent);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35);
+            border: 3px solid #ffffff;
+        }
+
+        .step-icon {
+            font-size: 30px;
+            color: var(--blue-electric);
+            margin: 10px 0 14px;
+        }
+
+        .step-card h4 {
+            font-size: 17px;
+            font-weight: 800;
+            color: var(--navy-deep);
+            margin-bottom: 8px;
+        }
+
+        .step-card p {
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* ===== CTA BANNER ===== */
+        .cta-banner {
+            background: var(--gradient-hero);
+            color: #ffffff;
+            padding: 60px 16px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .cta-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: clamp(24px, 5vw, 38px);
+            font-weight: 900;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .cta-desc {
+            font-size: clamp(14px, 3vw, 16px);
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        /* ===== FAQ ACCORDION ===== */
+        .faq-grid {
+            max-width: 850px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .faq-item {
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 16px 18px;
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--navy-deep);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            user-select: none;
+        }
+
+        .faq-question i {
+            color: var(--blue-electric);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-answer {
+            padding: 0 18px 16px;
+            font-size: 13px;
+            color: var(--text-muted);
+            line-height: 1.6;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--navy-midnight);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 50px 16px 110px;
+            border-top: 1px solid rgba(56, 189, 248, 0.15);
+        }
+
+        .footer-container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.75);
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.45);
+        }
+
+        /* ===== BOTTOM MOBILE STICKY ACTION BAR ===== */
+        .mobile-bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(3, 8, 22, 0.96);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-top: 1px solid rgba(56, 189, 248, 0.25);
+            padding: 10px 14px;
+            display: none;
+            box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .mobile-bar-inner {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .mobile-btn {
+            flex: 1;
+            padding: 12px 10px;
+            border-radius: var(--radius-full);
+            font-size: 14px;
+            font-weight: 800;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-height: 44px;
+        }
+
+        /* ===================================================
+           COMPREHENSIVE RESPONSIVE MEDIA QUERIES (MOBILE FIRST)
+        =================================================== */
+
+        /* Laptops & Tablets (< 992px) */
+        @media (max-width: 992px) {
+            .nav-menu {
+                display: none;
+            }
+            .quick-actions-inner {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+            .mobile-bottom-bar {
+                display: block;
+            }
+        }
+
+        /* Tablets & Mobile (< 768px) */
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 10px 16px;
+            }
+            .nav-actions .btn-wa {
+                display: none; /* Hide WA in header on mobile to prevent clutter; use sticky bottom bar */
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+            .stat-card {
+                padding: 12px 6px;
+            }
+            .stat-num {
+                font-size: 20px;
+            }
+            .stat-label {
+                font-size: 10px;
+            }
+            .hero-cta-group {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .btn-hero-main, .btn-hero-wa {
+                width: 100%;
+                max-width: 340px;
+            }
+            .cta-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .cta-buttons .btn-hero-main, .cta-buttons .btn-hero-wa {
+                width: 100%;
+                max-width: 340px;
+            }
+            .footer-top {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-brand {
+                justify-content: center;
+            }
+            .footer-links {
+                justify-content: center;
+                gap: 14px 18px;
+            }
+        }
+
+        /* Small Phones (< 480px) */
+        @media (max-width: 480px) {
+            .brand-title {
+                font-size: 17px;
+            }
+            .brand-subtitle {
+                font-size: 8px;
+            }
+            .logo-wrap {
+                width: 38px;
+                height: 38px;
+            }
+            .btn-glow {
+                padding: 8px 14px;
+                font-size: 12px;
+            }
+            .logo-ring-outer {
+                width: 110px;
+                height: 110px;
+            }
+            .hero {
+                padding: 40px 12px 60px;
+            }
+            .hero-badge-pill {
+                font-size: 10px;
+                padding: 5px 12px;
+            }
+            .quick-actions-bar {
+                margin-top: -20px;
+                padding: 0 12px;
+            }
+            .quick-actions-inner {
+                padding: 14px;
+            }
+            .quick-icon {
+                width: 38px;
+                height: 38px;
+                font-size: 16px;
+            }
+            .quick-info h4 {
+                font-size: 12px;
+            }
+            .quick-info p {
+                font-size: 10px;
+            }
+            .rates-table-header, .rates-row {
+                grid-template-columns: 1.8fr 1fr 1fr;
+                padding: 10px 12px;
+            }
+            .rate-game-name {
+                font-size: 12px;
+                gap: 6px;
+            }
+            .rate-game-name i {
+                width: 22px;
+                height: 22px;
+                font-size: 10px;
+            }
+            .rate-bet, .rate-win {
+                font-size: 12px;
+            }
+            .rates-row.jackpot .rate-win {
+                font-size: 13px;
+            }
+            .market-card {
+                padding: 20px 16px;
+            }
+            .market-icon-box {
+                width: 46px;
+                height: 46px;
+                font-size: 18px;
+            }
+            .market-card h3 {
+                font-size: 17px;
+            }
+            .step-card {
+                padding: 28px 16px 20px;
+            }
+            .mobile-btn {
+                font-size: 13px;
+                padding: 10px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP ANNOUNCEMENT TICKER -->
+    <div class="ticker-bar">
+        <div class="ticker-content">
+            <span class="ticker-item"><i class="fas fa-bullhorn"></i> Welcome to <strong>Tara 567 Official</strong> - India's Most Trusted & Fastest Matka Gaming Platform!</span>
+            <span class="ticker-item"><i class="fas fa-shield-alt"></i> 100% Safe & Instant Automated Withdrawals Active 24/7.</span>
+            <span class="ticker-item"><i class="fas fa-headset"></i> Need Help? Contact Customer Support via WhatsApp & Phone call anytime!</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <div class="logo-wrap">
+                    <img src="logo.png" alt="Tara 567 Logo">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-title">Tara <span>567</span></span>
+                    <span class="brand-subtitle">✦ Official Matka App ✦</span>
+                </div>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#markets" class="nav-link">Markets</a></li>
+                <li><a href="#rates" class="nav-link">Game Rates</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#how-to-play" class="nav-link">How to Play</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="https://wa.me/918905652643?text=Welcome+To+Tara+567" target="_blank" class="btn-wa">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="Tara567.apk" class="btn-glow">
+                    <i class="fas fa-download"></i> Download App
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            
+            <div class="hero-logo-showcase">
+                <div class="logo-ring-outer">
+                    <img src="logo.png" alt="Tara 567 Logo" class="logo-img-inner">
+                </div>
+            </div>
+
+            <div class="hero-badge-pill">
+                <span class="pulse-dot"></span>
+                <span>INDIA'S #1 MOST TRUSTED GAMING APP</span>
+            </div>
+
+            <h1 class="hero-title">
+                <span class="highlight">TARA 567</span><br>
+                MATKA GAMING
+            </h1>
+
+            <p class="hero-subtitle">
+                Play your favorite Matka markets with live results, highest game winning rates, and instant 24/7 payouts directly to your account.
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="Tara567.apk" class="btn-hero-main">
+                    <i class="fas fa-cloud-download-alt"></i> Download Official App
+                </a>
+                <a href="https://wa.me/918905652643?text=Welcome+To+Tara+567" target="_blank" class="btn-hero-wa">
+                    <i class="fab fa-whatsapp"></i> Direct WhatsApp
+                </a>
+            </div>
+
+            <!-- STATS COUNTER -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-num">50,000+</span>
+                    <span class="stat-label">Active Players</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">100%</span>
+                    <span class="stat-label">Verified Safe</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">&lt; 5 Min</span>
+                    <span class="stat-label">Withdrawal</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-num">24 / 7</span>
+                    <span class="stat-label">Live Support</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- QUICK ACCESS FLOATING BAR -->
+    <div class="quick-actions-bar">
+        <div class="quick-actions-inner">
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="quick-info">
+                    <h4>Android Application</h4>
+                    <p>Fast & smooth gameplay</p>
+                </div>
+            </div>
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fas fa-bolt"></i></div>
+                <div class="quick-info">
+                    <h4>Live Fast Results</h4>
+                    <p>Instant market updates</p>
+                </div>
+            </div>
+            <div class="quick-item">
+                <div class="quick-icon"><i class="fas fa-lock"></i></div>
+                <div class="quick-info">
+                    <h4>Bank Security</h4>
+                    <p>100% Safe transactions</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MARKETS LIST SECTION -->
+    <section class="section" id="markets">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-globe"></i> Markets Overview</span>
+                <h2 class="section-title">Available Markets in Tara 567</h2>
+                <p class="section-desc">Play in all top Indian Matka markets with fast results and instant payouts</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="markets-grid">
+                <!-- Main Markets -->
+                <div class="market-card">
+                    <div class="market-icon-box">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Main Markets</h3>
+                    <p>India's most famous daily traditional markets featuring maximum game limits and odds.</p>
+                    <div class="tags-wrapper">
+                        <span class="tag-pill">Kalyan</span>
+                        <span class="tag-pill">Kalyan Night</span>
+                        <span class="tag-pill">Madhur Morning</span>
+                        <span class="tag-pill">Madhur Night</span>
+                        <span class="tag-pill">Milan Day/Night</span>
+                        <span class="tag-pill">Rajdhani Day/Night</span>
+                        <span class="tag-pill">Sridevi</span>
+                        <span class="tag-pill">Supreme Night</span>
+                    </div>
+                </div>
+
+                <!-- Gali Disawar -->
+                <div class="market-card">
+                    <div class="market-icon-box">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Gali &amp; Disawar</h3>
+                    <p>Popular North Indian fast-paced markets declared daily with rapid outcome notifications.</p>
+                    <div class="tags-wrapper">
+                        <span class="tag-pill">Gali</span>
+                        <span class="tag-pill">Disawar</span>
+                        <span class="tag-pill">Faridabad</span>
+                        <span class="tag-pill">Ghaziabad</span>
+                        <span class="tag-pill">Delhi Bazar</span>
+                        <span class="tag-pill">Shri Ganesh</span>
+                    </div>
+                </div>
+
+                <!-- Starline -->
+                <div class="market-card">
+                    <div class="market-icon-box">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Starline Markets</h3>
+                    <p>Hourly 24x7 non-stop game results declared round the clock for continuous winning opportunities.</p>
+                    <div class="tags-wrapper">
+                        <span class="tag-pill">Kalyan Starline</span>
+                        <span class="tag-pill">Milan Starline</span>
+                        <span class="tag-pill">Gali Starline</span>
+                        <span class="tag-pill">Dubai Starline</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GAME RATES SECTION -->
+    <section class="section section-alt" id="rates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-trophy"></i> Best Payouts</span>
+                <h2 class="section-title">Tara 567 Game Rates</h2>
+                <p class="section-desc">Experience maximum return on your bets with our industry-leading rates</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="rates-container">
+                <div class="rates-table-header">
+                    <div>Game Type</div>
+                    <div>Bet Amount</div>
+                    <div>Win Payout</div>
+                </div>
+
+                <div class="rates-row">
+                    <div class="rate-game-name"><i class="fas fa-dice-one"></i> Single Digit</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹10</div>
+                </div>
+
+                <div class="rates-row">
+                    <div class="rate-game-name"><i class="fas fa-dice-two"></i> Jodi Digit</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹100</div>
+                </div>
+
+                <div class="rates-row">
+                    <div class="rate-game-name"><i class="fas fa-square"></i> Red Bracket</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹97.5</div>
+                </div>
+
+                <div class="rates-row">
+                    <div class="rate-game-name"><i class="fas fa-layer-group"></i> Single Pana</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹160</div>
+                </div>
+
+                <div class="rates-row">
+                    <div class="rate-game-name"><i class="fas fa-cubes"></i> Double Pana</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹320</div>
+                </div>
+
+                <div class="rates-row">
+                    <div class="rate-game-name"><i class="fas fa-crown"></i> Triple Pana</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹1,000</div>
+                </div>
+
+                <div class="rates-row">
+                    <div class="rate-game-name"><i class="fas fa-gem"></i> Half Sangam</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹1,000</div>
+                </div>
+
+                <div class="rates-row jackpot">
+                    <div class="rate-game-name"><i class="fas fa-star"></i> Full Sangam</div>
+                    <div class="rate-bet">₹1</div>
+                    <div class="rate-win">₹10,000</div>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-top: 16px; font-size: 12px; color: var(--text-muted);">
+                * Note: Minimum bet starts from ₹5. Winnings are credited instantly to your account wallet.
+            </p>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE TARA 567 (FEATURES) -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-shield-check"></i> Key Highlights</span>
+                <h2 class="section-title">Why Players Choose Tara 567</h2>
+                <p class="section-desc">Designed with high-security, ultra-fast servers, and seamless user interface</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fas fa-shield-alt"></i></div>
+                    <h4>100% Verified Safe</h4>
+                    <p>Protected with end-to-end security protocols to keep your funds completely safe.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fas fa-bolt"></i></div>
+                    <h4>Instant Live Results</h4>
+                    <p>Get real-time live result updates the exact second markets open and close.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fas fa-wallet"></i></div>
+                    <h4>Fast Withdrawals</h4>
+                    <p>Withdraw your winnings directly to your UPI, Google Pay, PhonePe, or Bank Account.</p>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fas fa-headset"></i></div>
+                    <h4>24/7 Live Support</h4>
+                    <p>Our expert support team is always active on WhatsApp & Phone call for assistance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW TO PLAY STEPS -->
+    <section class="section section-alt" id="how-to-play">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-play-circle"></i> Quick Guide</span>
+                <h2 class="section-title">How To Get Started</h2>
+                <p class="section-desc">Start playing and winning on Tara 567 in just 3 easy steps</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="steps-wrapper">
+                <div class="step-card">
+                    <div class="step-badge">1</div>
+                    <div class="step-icon"><i class="fas fa-download"></i></div>
+                    <h4>Download App</h4>
+                    <p>Click on the download button to download the official Tara 567 APK file on your mobile.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-badge">2</div>
+                    <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+                    <h4>Register Account</h4>
+                    <p>Open the app, register using your phone number, and set up your secure account password.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-badge">3</div>
+                    <div class="step-icon"><i class="fas fa-trophy"></i></div>
+                    <h4>Play &amp; Win Cash</h4>
+                    <p>Add funds to your wallet, select your favorite market, place bets and win cash!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag"><i class="fas fa-question-circle"></i> Help &amp; FAQs</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-desc">Find quick answers to common questions about Tara 567</p>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>How do I download the Tara 567 App?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Simply tap any of the "Download App" buttons on this website. The official APK will begin downloading automatically. Once downloaded, open it and install it on your Android phone.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is deposit and withdrawal fast on Tara 567?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! Tara 567 features instant automated payment processing via PhonePe, Google Pay, Paytm, and UPI. Withdrawals are processed within 5-10 minutes 24 hours a day.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I contact customer support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        You can reach out directly to our dedicated support agents by clicking the WhatsApp button or calling our official hotline at +91 9610232013.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="cta-banner">
+        <div class="cta-container">
+            <h2 class="cta-title">Ready To Experience India's Premier Matka Platform?</h2>
+            <p class="cta-desc">Download Tara 567 now and join thousands of daily winners!</p>
+            
+            <div class="cta-buttons">
+                <a href="Tara567.apk" class="btn-hero-main">
+                    <i class="fas fa-download"></i> Download App Now
+                </a>
+                <a href="https://wa.me/918905652643?text=Welcome+To+Tara+567" target="_blank" class="btn-hero-wa">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="logo-wrap" style="width: 38px; height: 38px;">
+                        <img src="logo.png" alt="Tara 567 Logo">
+                    </div>
+                    <div class="brand-text">
+                        <span class="brand-title" style="font-size: 18px;">Tara <span>567</span></span>
+                        <span class="brand-subtitle">Official Gaming Platform</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#markets">Markets</a>
+                    <a href="#rates">Game Rates</a>
+                    <a href="#features">Features</a>
+                    <a href="Tara567.apk">Download APK</a>
+                    <a href="https://wa.me/918905652643" target="_blank">Contact Support</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Tara 567. All Rights Reserved. | Play Responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE BOTTOM BAR -->
+    <div class="mobile-bottom-bar">
+        <div class="mobile-bar-inner">
+            <a href="Tara567.apk" class="mobile-btn btn-glow">
+                <i class="fas fa-download"></i> Download App
+            </a>
+            <a href="https://wa.me/918905652643?text=Welcome+To+Tara+567" target="_blank" class="mobile-btn btn-wa">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- SIMPLE FAQ JS INTERACTION -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const parent = q.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
